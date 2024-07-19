@@ -1,0 +1,49 @@
+###
+POST http://localhost:1234/ecommerce/signup
+Content-Type: application/json
+ 
+{
+    "username": "sam",
+    "password": "123",
+    "fullname": "jothinathan",
+    "phone": 8807993608,
+    "address": "attayampatti,salem-dt-637501"
+}
+
+###
+POST  http://localhost:1234/ecommerce/checklogin
+Content-Type: application/json
+
+{
+    "username": "jothinathan@gmail.com",
+    "password": "123"
+}
+###
+POST http://localhost:1234/ecommerce/insertcollection
+Content-Type: application/json
+
+{
+    "itemname":  "dharan" ,
+    "itemprice":  2300000 ,
+    "itemid":  1003234334
+}
+###
+PUT http://localhost:1234/ecommerce/insertcart
+Content-Type: application/json
+
+{
+    "username": "jothinathan@gmail.com",
+    "itemname": "benz car",
+    "itemprice": 36000000,
+    "itemid": 1002,
+    "quantity": 1
+}
+###
+GET   http://localhost:1234/ecommerce/users
+###
+GET   http://localhost:1234/ecommerce/kart/jothinathannagarajan@gmail.com
+###
+GET   http://localhost:1234/ecommerce/collection/
+###
+
+###
